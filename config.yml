@@ -1,0 +1,17 @@
+title: Hewakiii
+tagline: A brand new course on Learning Lab
+description: 'Publiczny kurs korzystanie z github dla początkujących '
+template:
+  repo: hewakiii-template
+  name: hewakiii
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
